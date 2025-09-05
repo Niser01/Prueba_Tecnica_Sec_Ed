@@ -28,7 +28,7 @@ public class ConversorService {
 
     private String hora_en_palabras(int hora, int minuto){
         if (minuto == 0){
-            return EXIT_NUMBERS[hora] + "o' clock";
+            return EXIT_NUMBERS[hora] + " o' clock";
         }
         if (minuto == 15){
             return "quarter past " + EXIT_NUMBERS[hora];
@@ -44,7 +44,7 @@ public class ConversorService {
         }
         
         int restantes = 60-minuto;
-        return(restantes == 1 ? EXIT_NUMBERS[restantes]+ "minute" : EXIT_NUMBERS[restantes]+" minutes")+" to " + EXIT_NUMBERS[(hora % 12) + 1];
+        return(restantes == 1 ? EXIT_NUMBERS[restantes]+ " minute" : EXIT_NUMBERS[restantes]+" minutes")+" to " + EXIT_NUMBERS[(hora % 12) + 1];
     }
     
     public List<Map<String, Object>> process_file(MultipartFile file){
