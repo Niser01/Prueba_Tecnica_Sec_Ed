@@ -3,8 +3,6 @@
 Este proyecto es una aplicación **Spring Boot** que expone un servicio REST para conversión de archivos (ejemplo: subir un archivo y procesarlo).  
 Actualmente está configurado para ejecutarse fácilmente desde **VSCode** usando la extensión *Spring Boot Dashboard*.
 
----
-
 ## 📋 Requisitos previos
 
 Asegúrate de tener instalado en tu equipo:
@@ -16,8 +14,6 @@ Asegúrate de tener instalado en tu equipo:
   - Extensión **Spring Boot Tools** (Spring Boot Dashboard)  
   - Extensión **Java Extension Pack**  
 
----
-
 ## 📂 Clonar el repositorio
 
 Clona este proyecto en tu máquina local con:
@@ -27,8 +23,6 @@ git clone https://github.com/Niser01/Prueba_Tecnica_Sec_Ed
 cd backend
 ```
 
----
-
 ## ⚙️ Instalación
 
 Compila e instala las dependencias del proyecto con Maven:
@@ -37,8 +31,6 @@ Compila e instala las dependencias del proyecto con Maven:
 mvn clean install
 ```
 
----
-
 ## ▶️ Ejecución
 
 ### 🔹 Opción 1: Desde VSCode con Spring Boot Dashboard
@@ -46,17 +38,13 @@ mvn clean install
 1. Abre la carpeta **backend** en **VSCode**.  
 2. Ve a la pestaña **Spring Boot Dashboard** (en la barra lateral izquierda).  
 3. Selecciona el proyecto que aparece listado (VSCode detectará automáticamente la clase principal BackendApplication).
-4. Haz clic en **Run** ▶️ para iniciar la aplicación.  
+4. Haz clic en **Run** para iniciar la aplicación.  
 
 La aplicación quedará levantada en:
-
-
 
 ```
 http://localhost:8080
 ```
-
----
 
 ### 🔹 Opción 2: Desde línea de comandos
 
@@ -71,8 +59,6 @@ o bien:
 ```bash
 java -jar target/backend-0.0.1-SNAPSHOT.jar
 ```
-
----
 
 ## 📡 Endpoints principales
 
@@ -94,8 +80,6 @@ curl -X POST http://localhost:8080/upload \
 
 ```
 
----
-
 ## 🧪 Pruebas
 
 Puedes probar los endpoints con:
@@ -104,7 +88,6 @@ Puedes probar los endpoints con:
 - [Postman](https://www.postman.com/)  
 - [cURL](https://curl.se/)  
 
----
 
 ## 🚀 Despliegue futuro
 
