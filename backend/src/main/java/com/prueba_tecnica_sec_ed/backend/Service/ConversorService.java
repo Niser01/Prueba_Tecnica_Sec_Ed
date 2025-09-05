@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public class service {
+public class ConversorService {
 
     //Se definen las posibilidades en texto de los numero para la salida
     private static final String[] EXIT_NUMBERS = {
