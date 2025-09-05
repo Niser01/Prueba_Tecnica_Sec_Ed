@@ -26,6 +26,7 @@ public class ConversorService {
         "twenty eight", "twenty nine"
     };
 
+    //Este metodo convierte la hora en palabras de acuerdo con los parametros establecidos por el problema
     private String hora_en_palabras(int hora, int minuto){
         if (minuto == 0){
             return EXIT_NUMBERS[hora] + " o' clock";
@@ -51,7 +52,7 @@ public class ConversorService {
 
         //Se valida que se este cargando un archivo y que este contenga informacion
         if (file == null || file.isEmpty()){
-            throw new IllegalArgumentException("No se encontro un archivo para el programa");
+            throw new IllegalArgumentException("No se encontro un archivo valido para el programa");
         }
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))){
